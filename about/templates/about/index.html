@@ -1,0 +1,28 @@
+{% extends 'about/base_site.html' %}
+{% load i18n %}
+<!-- subscribe.html -->
+
+{% block content %}
+<section>
+  <div class="row mb-3">
+    <h1 class="text-center">{% trans 'About us' %}</h1>
+    <h2 class="text-center">{% trans 'Welcome to RenderMed' %}</h2>
+    <hr class="my-4 mx-auto">
+    <p class="text-center">{% trans 'We are your reliable partner in the field of 3D animation, design and medicine. Our mission is to combine the art of visual design with technological innovation to create immersive experiences that inform, educate and inspire.' %}</p>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>{% trans 'Ours Story' %}</h4>
+      <img class="rounded shadow-sm w-100 bg-secondary mb-2" src="" alt="" style="height: 400px">
+      <p>{% trans 'Founded in 2010, Rendermed was born from the vision of creating a bridge between visual art and the world of medicine. From a small studio started in a garage in Milan, we have grown to become a leader in the medical animation industry. Every step of our history is marked by innovation and passion for knowledge.' %}</p>
+    </div>
+    <div class="col-lg-6">
+
+      <img class="rounded shadow-sm w-100 bg-secondary mb-2" src="" alt="" style="height: 400px">
+    </div>
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% load i18n %}
+
+<!-- Modal -->
+<div class="modal fade" id="newsletterSend" tabindex="-1" aria-labelledby="newsletterSendLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{% translate 'Select yours Subscriber and Send' %}</h5>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" action="{% url 'newsletter_admin:newsletter_newsletter_send' %}">
+          {% csrf_token %}
+          {% if adminform %}
+            {% for field in adminform.subscriberSelect %}
+              <div class="form-check">
+                {{ field.errors }}
+                {{ field.label_tag }} {{ field }}
+                {% if field.help_text %}
+                <p class="help">{{ field.help_text|safe }}</p>
+                {% endif %}
+              </div>
+            {% endfor %}
+          {% else %}
+          <h1>fuck</h1>
+          {% endif %}
+
+          <div class="mt-2">
+            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

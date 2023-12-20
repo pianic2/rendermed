@@ -1,0 +1,62 @@
+{% extends 'newsletter-admin/base_site.html' %}
+{% load i18n %}
+
+{% block branding %}
+  {{ request.resolver_match.app_name|title }}
+{% endblock %}
+
+{% block content_title %}
+  <h2>
+    {% translate 'Dashboard' %}
+  </h2>
+{% endblock %}
+
+{% block content_subtitle %}
+  <h5>
+    {% translate 'Edit and Send email to yours subscriber' %}
+  </h5>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="card text-center p-2">
+      <h4>{% translate 'Select a template' %}</h4>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateSelect">{% translate 'Select' %}</button>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center p-2">
+      <h4>{% translate 'Custom it' %}</h4>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterAdd">{% translate 'Custom' %}</button>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center p-2">
+      <h4>{% translate 'Send to yours subscriber' %}</h4>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterSend">{% translate 'Send' %}</button>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>{% translate 'Preview' %}</h4>
+      </div>
+      <div class="card-body">
+        {{ template.0.title }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block modal %}
+  {% include 'newsletter-admin/newsletter_add.html' %}
+  {% include 'newsletter-admin/newsletter_send.html' %}
+  {% include 'newsletter-admin/template_view.html' %}
+{% endblock %}

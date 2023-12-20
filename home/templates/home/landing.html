@@ -1,0 +1,196 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Animazioni 3D mediche di alta qualità e personalizzate per professionisti del settore." />
+        <meta name="author" content="Niccolò Piazzi" />
+        <title>Rendermed - Pionieri dell'Animazione 3D nel Settore Medicale</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">RenderMed</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="{% url 'about:about' %}">Chi siamo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#projects">Educazione</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#signup">Contatti</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#signup">Galleria 3D</a></li>
+                        <li class="nav-item"><a class="nav-link text-white bg-primary rounded" href="#signup">Visita lo store</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">RenderMed</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Scopri il Futuro dell'Animazione Medica! Porta il tuo lavoro in una nuova dimensione con animazioni 3D ultra-realistiche.</h2>
+                        <a class="btn btn-primary btn-lg" href="#about">Visita lo Store</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Pionieri nell'Animazione 3D Medica</h2>
+                        <p class="text-white-50">
+                            Da oltre un decennio, Rendermed si dedica a trasformare il campo medico con animazioni 3D di altissima qualità. La nostra passione per l'innovazione e la precisione ci ha resi leader nel nostro settore, offrendo soluzioni visive che migliorano l'educazione dei pazienti e la comunicazione professionale. Con un team di specialisti in medicina e tecnologia, garantiamo animazioni che catturano la complessità delle procedure mediche con dettagli sorprendenti.
+                        </p>
+                        <a class="btn btn-primary" href="#store">Visita lo store</a>
+                    </div>
+                </div>
+                <img class="img-fluid" src="{% static 'img/heart.jpg' %}" alt="Demo di Animazione 3D Rendermed" />
+            </div>
+        </section>
+        <!-- Projects-->
+        <!-- Project One Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'img/rendermed-project-1.png' %}" alt="Animazione 3D di un intervento chirurgico" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Strumenti per la diagnostica 3D</h4>
+                            <p class="mb-0 text-white-50">Trasforma e visualizza in 3D i tuoi casi clinici. Prepara al meglio i tuoi interventi chirurgici trasformando e visualizzando in 3D i tuoi casi clinici.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'img/rendermed-project-2.png' %}" alt="Animazione 3D del flusso sanguigno" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Agenda clinica 3D in cloud</h4>
+                            <p class="mb-0 text-white-50">Ottimizza la gestione del tuo flusso di lavoro. Organizza la tua agenda clinica, archivia i file diagnostici, visualizza ed elabora file 2D e 3D e condividi tutto con il tuo team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Three Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'img/rendermed-project-3.png' %}" alt="Animazione 3D di un intervento chirurgico" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Strumenti per la comunicazione medico paiente</h4>
+                            <p class="mb-0 text-white-50">Migliora la comunicazione con i tuoi pazienti. Racconta con supporti visivi le tue storie scientifiche e i progetti clinici dei tuoi pazienti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Inscriviti per rimanere aggiornato!</h2>
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Inserisci un email..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Aggiurnami!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">È richiesta una mail.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">L'email inserita non è valida.</div>
+
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Inscrizione effettuata con successo!</div>
+                              </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Indirizzo</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Via Montegrappa 54, Sassari 07100</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">info@rendermed.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+39 320 7927547</div>
+                                <div class="small text-black-50">+39 340 2705988</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; RenderMed 2024</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

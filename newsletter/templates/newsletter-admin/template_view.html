@@ -1,0 +1,27 @@
+{% load i18n %}
+
+<!-- Modal -->
+<div class="modal fade" id="templateSelect" tabindex="-1" aria-labelledby="templateSelectLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+         <h5 class="modal-title">{% translate 'Create new Newsletter' %}</h5>
+       </div>
+
+       <div class="modal-body">
+         <form method="post" action="#">
+           {% csrf_token %}
+           {% if adminform %}
+           {{ adminform.templateSend.as_p }}
+           {% else %}
+           <h1>fuck</h1>
+           {% endif %}
+           <div class="">
+             <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+             <button type="submit" class="btn btn-primary">Create</button>
+           </div>
+         </form>
+       </div>
+     </div>
+  </div>
+</div>
